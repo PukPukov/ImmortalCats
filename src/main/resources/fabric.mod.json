@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "immortalcats",
+  "version": "${version}",
+  "name": "ImmortalCats",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/pukpukov/ImmortalCats"
+  },
+  "license": "MIT",
+  "icon": "assets/immortalcats/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "ru.ancap.immortalcats.client.ImmortalCatsClient"
+    ],
+    "main": [
+      "ru.ancap.immortalcats.ImmortalCats"
+    ]
+  },
+  "mixins": [
+    "immortalcats.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
